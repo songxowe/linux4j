@@ -1,91 +1,154 @@
 # linux4j
 
 Linux for Java
+
 ----------------------------------------------------
 用户管理命令
+
 who 查看当前用户(详细)   * 
+
 whoami 查看当前用户  *
+
 su 切换用户 *
+
 passwd 给指定用户修改密码  *
+
 useradd  新增用户 *
+
 usermod  修改用户 *
+
 userdel  删除用户 *
+
 groupadd
+
 groupdel
+
 finger
+
 id
 
+
+
 基本命令  *
+
 echo 回显字符
+
 man 帮助
+
 help 命令名
 
 clear 清屏
+
 uname 显示OS名
+
 date 显示系统当前时间
+
 exit
 
+
+
 文件系统操作  *
+
 ls
 
 ls -l
+
 第一组 当前用户的权限
+
 第二组 当前组的其他用户的权限
+
 第三组 其他组的用户的权限
 
 rwx rwx rwx 
+
 111 111 111  二进制
+
 7   7   7
 
 rw- rw- rw- 
+
 110 110 110  二进制
+
 6   6   6 
 
 rw- --- --- 
+
 110 000 000
+
 6   0   0
 
 
 
 fdisk -l
+
 mount /dev/sdb1 /mnt/usb
+
 mount -t iso9660 /dev/cdrom /mnt/cdrom
+
 umount /mnt/usb
 
 目录操作  *
+
 pwd - 显示完整路径
+
 cd  
+
   cd /     - 进入根目录
+  
   cd xx    - 从当前目录进入子目录 xx
+  
   cd xx/zz - 从当前目录进入子目录 xx 的子目录 zz
+  
   cd ..    - 从当前目录返回到上一级目录
+  
 mkdir - 新建目录(文件夹)
+
 rmdir - 删除目录
 
+
+
 文件常用操作
+
 rm  *
+
 cp  *
+
 mv  *
+
 find  *
+
 chmod  *
+
 chgrp
+
 ln
+
 more
+
 less
+
 cat  *
+
 grep
+
 head
+
 tail
 
 vi filename  *
+
 a/i/o
+
 esc
+
 :q/:q!/:wq
 
 /etc/inittab 图形界面 5 - 命令行模式 3
+
 命令行模式下输入“startx”也可以直接进入图形界面
 
 rpm -ivh filename.rpm  *
+
 rpm -e filename  *
 
 压缩及解压缩
