@@ -1,0 +1,115 @@
+1,Linux4J 
+	linux for java
+	linux 是一个操作系统
+	管理计算机上的软件资源
+	管理计算机上的硬件资源
+2,linux的特点
+	源代码公开的
+	自由传播的
+	由非盈利机构管理，由世界各地的程序员免费开发的
+3,linux历史
+	linux是一个类(像)Unix操作系统
+	Unix是在上个世纪70年代由贝尔实验室使用C语言开发的,源码公开
+	许多商业公司根据Unix开发出不同版本的Unix操作系统，但是要收费,源码不公开
+	上个世纪80年代贝尔实验室收回Unix版权
+
+	斯特曼(黑客)希望开发一个免费使用的Unix操作系统,他把他的这计划叫做GNU,同时成立一个基金会FSF
+	在GNU下斯特曼编写了一些在Unix操作系统下免费使用的软件,如GCC,VI
+
+	VI是一个编辑器
+	GCC是一个编译器
+
+	Minux操作系统
+	是由一个大学教授编写的,模仿Unix操作系统编写的,但是不允许修改
+
+	一个芬兰的大学生叫托瓦兹根据Minux编写了linux操作系统内核，代码公开，
+
+	1991发布的0.9版本
+
+4,linux的版本
+	内核版
+		是指托瓦兹维护的Linux内核,全世界只有一个
+		x.y.z(2.5.5,2.6.8)
+
+	发行版
+		发行版是由个人，公司，机构发行的
+		发行版包括内核版，还有一些应用程序,文档，工具
+		fedora(由红帽子开发的,个人用户，免费)
+		redhat(由红帽子开发的,企业用户，收费)
+		ubuntu(友邦拓)
+
+5,安装 RedHat Enterprise 7
+	需要RedHat Enterprise 7安装光盘
+	需要VMware workstation安装程序
+
+	1,安装VMware workstation
+	2,虚拟电脑
+		a,在一个有足够空间的的分区上创建一个目录(放置虚拟机)
+		b,使用VMware workstation在该目录下创建一个虚拟机
+	3,把RedHat Enterprise 7安装光盘放入虚拟电脑的虚拟光驱
+	4,安装RedHat Enterprise 7
+	(
+	学校机器的同学
+	1,使用WMware的file菜单下的open菜单打开 d:\rh7目录下的虚拟机
+	2,使用工具栏上的电源按钮启动RedHat Enterprise 7
+	)
+6，登录
+	root用户是linux操作系统超级用户(adminsitor)
+	在命令行界面下输入的口令是不显示的(rootroot)
+	
+	从命令行界面到图形界面
+	init 5
+	init 是控制linux运行级别的程序
+	5 是级别参数(图形)
+	3 命令行
+	
+	从图形界面到命令行界面
+	1,在桌面上右击
+	2,打开终端
+	3,输入init 3
+
+7,主机与虚拟机的的键盘与鼠标是共享的,同一时刻只能属于一个机器
+	主机->虚拟机 使用鼠标在虚拟机中点一下(GTRL+G)
+	虚拟机->主机 CTRL+Alt
+8,关机
+	halt
+9,基本命令
+	命令格式 
+	命令  【-选项】... 【参数】...
+	命令  【--选项】... 【参数】...
+	
+	ls 命令
+		列表显示指定路径文件
+	ls				显示当前路径下的文件
+	ls -a				显示当前路径下的所有文件
+	ls --all			显示当前路径下的所有文件
+	ls -al				列表(long)显示当前路径下的所有文件
+	ls -al /root			列表(long)显示/root路径下的所有文件
+	ls -al /root /home	列表(long)显示/root 和 /home路径下的所有文件
+
+	
+	字体变大与变小
+	ctrl shift  +	变大
+	ctrl -			变小
+
+	pwd 
+	显示当前路径
+	cd 
+	更改当前路径
+	cd /home
+	cd ..  - 返回上一级目录
+
+	clear
+	清屏
+
+	查看命令帮助
+	man 命令
+	q退出帮助
+
+第一讲作业：
+	1,which命令的意思
+	2,PATH环境变量的意思
+	3,使用date命令修改系统的时间
+	4,使用virtualbox安装RedHat Enterprise 7
+
+

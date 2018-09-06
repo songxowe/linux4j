@@ -1,0 +1,93 @@
+1,linux的目录结构
+	文件系统层次标准(FHS)
+		定义/路径下有哪些目录，及/usr /var路径下有哪些目录
+		这些目录应该防止哪些类型的文件
+	linux目录是一个树形结构
+	linux使用挂载来把硬盘的分区与目录关联
+		mount /dev/sdb1 /mnt
+		umount /mnt
+		mount /dev/cdrom /media
+	linux下所有的设备都是一个文件
+	查看硬盘使用信息
+		df
+2,文件系统详解
+	CTRL + C 中断正在前途运行的程序
+	以树形的格式显示路径的内容
+		tree   -L 1  /
+		tree 
+	
+	/bin		用户命令目录
+	/root		root用户的家目录
+	/etc		操作系统配置文件目录
+	/dev		设备文件的目录
+	/media	当运行图形界面是光盘自动挂载的目录
+	/sbin	系统管理命令目录
+	/usr		用户程序目录(/usr/java jdk程序)
+	/var		可变数据目录(/usr/lib/mysql mysql数据库)
+	/home	普通用户的家目录
+	/mnt		挂载移动存储设备目录
+
+3，文件相关命令 
+	在linux上所有的东西都是文件
+	路径(PATH)就是位置
+	绝对路径	以/开头的路径
+	相对路径	不以/开头的路径
+	..表示父目录
+	.表示目录本身
+	在linux文件名不决定文件的类型
+	
+	创建一个普通文件
+	touch 路径
+	touch /home/a.txt
+	touch ../home/b.txt
+	touch c.txt
+	创建一个目录文件
+	mkdir 路径
+	mkdir /home/dir1
+	mkdir ../home/dir2
+	mkdir dir3
+	mkdir dir1 dir2
+	mkdir -p dir3/dir4 
+	-p 创建父目录
+
+	删除文件
+	rmdir 路径
+	rmdir /home/dir1
+	rmdir ../home/dir2
+	rmdir dir3
+	不能删除非空目录
+	rm -rf dir3
+	-r 删除子目录
+	-f 不提示
+	rm a.txt btxt
+
+	文件的移动与改名
+		mv 源文件 目标文件 
+		mv dir1/a.txt dir2/b.txt
+
+	文件的复制
+		cp 源文件 目标文件 
+		cp dir2/b.txt dir1/a.txt
+		cp dir2/b.txt dir1
+		cp -r dir1 dir2
+
+	更改当前路径
+		cd 路径
+		cd /home
+		cd ../home
+
+第二次课作业
+	0,在/下创建peat目录
+	1,在peat目录下创建dir1,dir2,dir3三个目录
+	2,在dir1下创建一个文件test.txt
+	3,在dir1下创建一个目录log
+	4,在log目录下创建一个文件log.txt
+	5,把dir1下的所有文件与目录复制到dir3下
+	6,删除dir2目录
+	7,删除dir1目录
+	8,把dir3改名为dir1
+
+		
+
+	
+
